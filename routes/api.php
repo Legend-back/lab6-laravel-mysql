@@ -16,7 +16,6 @@ Route::get('/cats/{id}',      [CatController::class, 'show']);
 Route::put('/cats/{id}',      [CatController::class, 'update']);
 Route::delete('/cats/{id}',   [CatController::class, 'destroy']);
 
-
 Route::get('/dogs',           [DogController::class, 'index']);  
 Route::post('/dogs',          [DogController::class, 'store']);
 Route::get('/dogs/{id}',      [DogController::class, 'show']);
