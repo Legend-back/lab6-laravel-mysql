@@ -12,7 +12,6 @@ class DogController extends Controller
     {
         return response()->json(Dog::all());
     }
-
     
     public function store(Request $request)
     {
