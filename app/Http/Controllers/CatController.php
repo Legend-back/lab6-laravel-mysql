@@ -20,7 +20,6 @@ class CatController extends Controller
         return response()->json(['message' => 'Gato agregado']);
     }
 
-
     public function index(Request $request)
     {
         $limit = (int) $request->query('limit', 0);
