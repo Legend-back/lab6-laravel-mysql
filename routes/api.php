@@ -9,7 +9,6 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-
 Route::get('/cats',           [CatController::class, 'index']);   
 Route::post('/cats',          [CatController::class, 'store']);
 Route::get('/cats/{id}',      [CatController::class, 'show']);
